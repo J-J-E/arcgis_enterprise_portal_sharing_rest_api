@@ -1,0 +1,39 @@
+# ArcGIS Portal Tools Repository
+
+## Scripts Included
+
+### `update_portal_item_url.py`
+
+#### Description:
+This script updates URLs in ArcGIS portal items owned by a specific user and initiates a full reindex of portal content and items.
+
+#### Usage:
+1. Configure `update_portal_item_url.py` with your portal URL, admin credentials, old and new URLs, and owner. This will replace the base urls from old -> ne, it will leave everything after the base url untouched.
+2. Run `python update_portal_item_url.py` to execute the script.
+
+---
+
+### `register-service.py`
+
+#### Description:
+This script registers secure services on ArcGIS portal using input from `register-service-input.json`.
+
+#### How to Run:
+1. Fill `register-service-input.json` with your data.
+   - See `example-input.json`.
+   - Ensure `portalRoot` points to the path `/sharing/rest` of your ArcGIS portal.
+   - Obtain the `token` by inspecting network requests when logged into your portal.
+   - `services` should contain an array of services to register with `url` and `title`.
+
+2. Run `python register-service.py` to execute the script.
+
+---
+
+### Input Files
+
+#### `register-service-input.json`
+Sample JSON format for registering services on the ArcGIS portal.
+
+#### `example-input.json`
+Example JSON format demonstrating how to structure `register-service-input.json`.
+

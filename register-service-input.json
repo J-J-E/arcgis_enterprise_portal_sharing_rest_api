@@ -1,0 +1,19 @@
+{
+	"portalRoot": "https://domain.com/arcgis",
+	"username": "",
+	"password": "",
+	"services": [
+		{
+			"url": "https://services.arcgis.com/XQPYFrqSQJJjpQwt/arcgis/rest/services/Remarks_Feature_Layer/FeatureServer",
+			"title": "TEST SERVICE 123"
+		},
+		{
+			"url": "https://services.arcgis.com/XQPYFrqSQJJjpQwt/arcgis/rest/services/Remarks_Feature_Layer/FeatureServer",
+			"title": "TEST SERVICE 456"
+		},
+		{
+			"url": "https://services.arcgis.com/XQPYFrqSQJJjpQwt/arcgis/rest/services/Remarks_Feature_Layer/FeatureServer",
+			"title": "TEST SERVICE 789"
+		}
+	]
+}
