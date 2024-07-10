@@ -20,9 +20,7 @@ This script registers secure services on ArcGIS portal using input from `registe
 
 #### How to Run:
 1. Fill `register-service-input.json` with your data.
-   - See `example-input.json`.
-   - Ensure `portalRoot` points to the path `/sharing/rest` of your ArcGIS portal.
-   - Obtain the `token` by inspecting network requests when logged into your portal.
+   - See `register-service-input.json` for example data.
    - `services` should contain an array of services to register with `url` and `title`.
 
 2. Run `python register-service.py` to execute the script.
