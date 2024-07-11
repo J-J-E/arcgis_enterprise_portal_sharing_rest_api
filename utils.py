@@ -1,4 +1,3 @@
-# File: utils.py
 import http.client
 import urllib.parse
 from urllib.parse import urlparse, urlunparse
