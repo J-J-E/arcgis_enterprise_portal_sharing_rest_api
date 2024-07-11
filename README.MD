@@ -25,13 +25,18 @@ This script registers secure services on ArcGIS portal using input from `registe
 
 2. Run `python register-service.py` to execute the script.
 
----
+##### Input Files
 
-### Input Files
-
-#### `register-service-input.json`
+###### `register-service-input.json`
 Sample JSON format for registering services on the ArcGIS portal.
 
-#### `example-input.json`
-Example JSON format demonstrating how to structure `register-service-input.json`.
+---
 
+### `reindex-portal.py`
+
+#### Description:
+This script initiates a full re-index of all portal content.
+
+#### How to Run:
+1. Configure `reindex-portal.py` with your portal URL and admin credentials.
+2. Run `python reindex-portal.py` to execute the script.
