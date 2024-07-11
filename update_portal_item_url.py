@@ -1,12 +1,5 @@
 import utils
-
-# Configuration
-portal_url = 'https://domain.com/arcgis'
-admin_username = ''
-admin_password = ''
-old_url = 'https://old-domain.com'
-new_url = 'https://new-domain.com'
-owners = [] #if list is left empty, all users from portal will be retrieved and iterated through
+from env import portal_url, admin_username, admin_password, old_url, new_url, owners
 
 if __name__ == "__main__":
     token = utils.get_token(portal_url, admin_username, admin_password)
