@@ -1,7 +1,4 @@
 {
-	"portalRoot": "https://domain.com/arcgis",
-	"username": "",
-	"password": "",
 	"services": [
 		{
 			"url": "https://services.arcgis.com/XQPYFrqSQJJjpQwt/arcgis/rest/services/Remarks_Feature_Layer/FeatureServer",
