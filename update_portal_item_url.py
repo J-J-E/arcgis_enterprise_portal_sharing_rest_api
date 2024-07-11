@@ -6,12 +6,20 @@ admin_username = ''
 admin_password = ''
 old_url = 'https://10.168.0.23'
 new_url = 'https://gis-test.filmla.com'
-owner = 'Publisher'
+owners = ['Publisher', 'PortalAdmin', 'Esri', 'System']
 
 if __name__ == "__main__":
     token = utils.get_token(portal_url, admin_username, admin_password)
-    items = utils.get_user_items(portal_url, token, owner)
-
+    items = []
+    
+    for owner in owners:
+        print(f"getting content for user {owner}.")
+        current_items = utils.get_user_items(portal_url, token, owner)
+        print(f" - total items for user {owner}: {len(current_items)}")
+        items.extend(current_items)
+        
+    print("\nUpdating Item URLs\n")
+    
     for item in items:
         item_id = item['id']
         item_title = item['title']
