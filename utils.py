@@ -20,6 +20,24 @@ def get_token(portal_url, admin_username, admin_password):
     response = requests.post(token_url, data=params, verify=False)
     return response.json().get('token')
 
+def query_all_users(portal_url, token):
+    users_url = f"{portal_url}/sharing/rest/portals/self/users"
+    params = {
+        'f': 'json',
+        'start': 1,
+        'num': 100,  # Adjust the number of users per request as needed
+        'token': token
+    }
+    all_users = []
+    while True:
+        response = requests.get(users_url, params=params, verify=False)
+        data = response.json()
+        all_users.extend(data.get('users', []))
+        if data['nextStart'] == -1:
+            break
+        params['start'] = data['nextStart']
+    return all_users
+
 def get_user_items(portal_url, token, owner):
     search_url = f"{portal_url}/sharing/rest/search"
     params = {
