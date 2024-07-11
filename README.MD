@@ -18,6 +18,11 @@ This script updates URLs in ArcGIS portal items owned by a specific user and ini
 #### Description:
 This script registers secure services on ArcGIS portal using input from `register-service-input.json`.
 
+##### Input Files
+
+###### `register-service-input.json`
+Sample JSON format for registering services on the ArcGIS portal.
+
 #### How to Run:
 1. Fill `register-service-input.json` with your data.
    - See `register-service-input.json` for example data.
@@ -25,10 +30,6 @@ This script registers secure services on ArcGIS portal using input from `registe
 
 2. Run `python register-service.py` to execute the script.
 
-##### Input Files
-
-###### `register-service-input.json`
-Sample JSON format for registering services on the ArcGIS portal.
 
 ---
 
