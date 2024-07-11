@@ -55,11 +55,11 @@ This script initiates a full re-index of all portal content.
 
 ---
 
-### `get-users.py`
+### `list-all-users.py`
 
 #### Description:
 This script generates a list of all portal users.
 
 #### How to Run:
 1. Configure `env.py` with your portal URL and admin credentials.
-2. Run `python get-users.py` to execute the script.
+2. Run `python list-all-users.py` to execute the script.
