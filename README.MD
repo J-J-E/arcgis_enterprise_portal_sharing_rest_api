@@ -8,7 +8,7 @@
 This script updates URLs in ArcGIS portal items owned by a specific user and initiates a full reindex of portal content and items.
 
 #### Usage:
-1. Configure `update_portal_item_url.py` with your portal URL, admin credentials, old and new URLs, and owner. This will replace the base urls from old -> ne, it will leave everything after the base url untouched.
+1. Configure `update_portal_item_url.py` with your portal URL, admin credentials, old and new URLs, and owner. This will replace the base urls from old -> new, it will leave everything after the base url untouched.
 2. Run `python update_portal_item_url.py` to execute the script.
 
 ---
