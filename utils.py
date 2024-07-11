@@ -3,7 +3,6 @@ import http.client
 import urllib.parse
 from urllib.parse import urlparse, urlunparse
 import json
-import getpass
 import requests
 
 # Suppress only the single InsecureRequestWarning from urllib3
